@@ -1,0 +1,243 @@
+        
+        
+    // view welcome
+
+        #container_margin{ 
+            width: 100vw;    
+            margin-top: 172px; 
+        .slide {
+            position: relative;
+            img{
+                position: relative;
+                top: 0%;
+                left:0%;
+                display: block;
+                width: 100vw;             
+            }
+            #text-image {
+                width: 50%;
+                // height: 30%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                color: white;
+                z-index: 100;
+                letter-spacing: 0.16em;         
+                text-align: center;
+                font-family: 'Source Sans Pro', sans-serif;;               
+                h1{
+                    font-size: 3.5em;
+                    font-weight: bolder;
+                    letter-spacing: 0.16em;
+                    text-transform: uppercase;
+                    margin-bottom: 30px;
+                }
+            }
+            #overlay {
+                width:100%;
+                height: 100%;
+                position: absolute;
+                top: 0%;
+                left:0%;
+                bottom:0%;
+                right:0%;
+                background-color: rgba(000,000,000,0.3);
+            }
+        }
+        }
+
+        #about{
+            height: 500px;
+            padding: 100px 0px;;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            color:#D82027;
+            text-align:center;
+   
+            h2{
+                font-size: 2.6em;
+                letter-spacing: 0.20em; 
+                text-transform: uppercase;                      
+            }
+            p{
+                color:black;
+            }
+            a{
+                transition:0.4s;
+                &:hover{
+                    background-color:#B10F15;                
+                }
+            }         
+        }
+
+    #booking {
+        width: 100%;      
+        display: flex;
+        color: white;
+        #left-text{
+            width: 45%;
+            height: 100%;
+            padding: 180px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #333333;
+            h2{
+                text-transform: uppercase;
+                letter-spacing: 0.20em;
+                margin-bottom: 30px;
+            }
+            p{
+                margin-bottom: 40px;
+            }
+        }
+        #image-right{
+            width: 55%;
+            background-image: url('../img/ercole.webp');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat ;
+        }  
+    }
+       
+    main .button{
+        color:white;
+        padding: 12px 28px;
+        background-color: #D82027;
+        letter-spacing: 0.16em;
+        border: 0px;
+    }
+    main a{
+        transition:0.4s;
+        &:hover{
+            background-color:#B10F15;           
+        }
+    }   
+ 
+
+
+    // chi siamo
+
+    #cover img{
+        width: 100%;
+    }
+    #wrapper-white{
+        width: 40%;
+        padding: 120px 0px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .section_square{
+        width: 100%;
+        display: flex;
+        .square_text{
+            width: 50%;
+            padding: 230px 50px;
+            text-align: center;
+        }
+        .square_image{
+            width: 50%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }  
+        .first{
+            background-image: url('../img/tagli.png');
+
+        } 
+        .second{
+            background-image: url('../img/polpette.webp');
+        }
+    }
+
+
+
+// view ordina online
+   
+#form-bg {
+        background-image: url('../img/macellaiop.jpg');
+        background-attachment: fixed;
+        background-size:cover;
+        color:white;
+        padding-bottom: 100px;
+        .container {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+
+// view success
+
+#success {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    line-height: 100px;
+    #wrapper {
+        padding: 100px 0px;
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+    // media query
+
+    @media (max-width:600px){
+        #container_margin{
+            margin-top: 0%;
+            .slide #text-image{
+                h1{
+                    font-size: 2.0em;
+                }
+            }
+            h3{
+                font-size: 16px;
+            } 
+            #wrapper-white{
+                padding: 70px 0px;
+            }
+            .section_square{
+                flex-direction: column;
+                .square_text{
+                    width: 100%;
+                    padding:130px 50px;     
+                }
+                .square_image{
+                    width: 100%;
+                    height: 500px;  
+                }
+            }.reverse{
+                flex-direction: column-reverse;
+            }
+        }p{
+            font-size: 1.8em;
+        }
+    }
+    @media (max-width:800px){
+        #booking{
+            flex-direction: column-reverse;
+            #left-text{
+                width: 100%;
+            }
+            #image-right{
+                width: 100%;
+                height: 600px;
+            }
+        }
+
+    }

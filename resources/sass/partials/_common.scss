@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    font-family: 'Alfa Slub One','Arial';
+  }
+
+.container {
+  padding: 30px;
+  
+}
+
+a {
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    color:white;
+  }
+}
+
+p{
+  font-size: 1.6em;
+  font-weight: lighter;
+  font-family: "Taviraj", serif;
+}
+
+h4{
+  color: #D82027;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 1.8rem;
+  font-weight:bold;
+  margin-bottom: 40px;
+
+}
+
+.table-light th {
+  color: black;
+}
