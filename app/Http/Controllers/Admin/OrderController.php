@@ -115,4 +115,6 @@ class OrderController extends Controller
         
         return view('admin.orders.storico', compact('orders'));
     }
+
+    
 }

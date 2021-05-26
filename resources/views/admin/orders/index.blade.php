@@ -31,7 +31,6 @@
         <td> {{ $order->consegna->format('d/m/Y') }}</td>
         <td>
           <a href="{{ route('admin.orders.show',$order->id) }}" class="btn btn-info">Mostra</a>
-          <a href="" class="btn btn-success">Stampa</a>
           <a href="{{ route('admin.archivia',$order->id) }}" class="btn btn-danger">Archivia</a>
         </td>     
       </tr>

@@ -33,10 +33,11 @@ Route::prefix('admin') //prefisso rotte
   ->name('admin.')
   ->group(function() {
     // Route::get('/','HomeController@index');
+    
     Route::get('/orders/storico','OrderController@storico')->name('storico');
     Route::resource('orders','OrderController');
     Route::get('/orders/{id}/archive','OrderController@archive')->name('archivia');
-    
+  
 
 });
 
