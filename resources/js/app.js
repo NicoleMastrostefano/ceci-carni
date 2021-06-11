@@ -8,11 +8,12 @@ var app= new Vue(
       data: {
         imageIndex:0,
         images:[
-          // "../img/wagyu.png",
-          "../img/tagliata.svg",
-          "../img/tagliere_salumi.webp"
-          // "../img/knife.jpeg",
-          // "../img/fork.jpeg"
+        
+          "../img/tagliata.webp",
+          "../img/salumi.webp",
+          "../img/agnello.webp",
+          "../img/details.webp"
+      
         ],
         autoplay:""
       },

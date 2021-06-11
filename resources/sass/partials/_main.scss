@@ -15,7 +15,7 @@
                 width: 100vw;             
             }
             #text-image {
-                width: 50%;
+                width: 60%;
                 // height: 30%;
                 position: absolute;
                 left: 50%;
@@ -27,11 +27,14 @@
                 text-align: center;
                 font-family: 'Source Sans Pro', sans-serif;;               
                 h1{
-                    font-size: 3.5em;
+                    font-size: 4.5em;
                     font-weight: bolder;
                     letter-spacing: 0.16em;
                     text-transform: uppercase;
                     margin-bottom: 30px;
+                }
+                h3{
+                    font-size: 1.6em;
                 }
             }
             #overlay {
@@ -148,7 +151,8 @@
             background-repeat: no-repeat;
         }  
         .first{
-            background-image: url('../img/tagli.png');
+            background-image: url('../img/arrosto.webp');
+            background-position: right;
 
         } 
         .second{
@@ -161,9 +165,10 @@
 // view ordina online
    
 #form-bg {
-        background-image: url('../img/macellaiop.jpg');
+        background-image: url('../img/IMG_5383.webp');
         background-attachment: fixed;
         background-size:cover;
+        background-position: right;
         color:white;
         padding-bottom: 100px;
         .container {
@@ -196,18 +201,35 @@
 
 
     // media query
+    @media(max-width:375px){
+        #container_margin .slide  #text-image {
+            width: 80%;
+            h1{          
+                font-size: smaller;
+                margin-bottom: 0px;
+                }
+            h3{
+                font-size: 12px;
+            }
+        }    
+            h2{
+                font-size: 1.6em;
+            }                   
+    }
+
 
     @media (max-width:600px){
         #container_margin{
             margin-top: 0%;
             .slide #text-image{
                 h1{
-                    font-size: 2.0em;
+                    font-size: 2.4em;
                 }
-            }
+            
             h3{
-                font-size: 16px;
+                font-size: 14px;
             } 
+        }
             #wrapper-white{
                 padding: 70px 0px;
             }
@@ -229,6 +251,7 @@
         }
     }
     @media (max-width:800px){
+
         #booking{
             flex-direction: column-reverse;
             #left-text{
@@ -236,7 +259,9 @@
             }
             #image-right{
                 width: 100%;
-                height: 600px;
+                height: 400px;
+              
+                background-size:cover;
             }
         }
 

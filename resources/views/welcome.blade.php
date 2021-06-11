@@ -41,6 +41,7 @@
                 </div>
                 <div id="image-right"></div>
          </div>
+         <div class="fb-page" data-href="https://www.facebook.com/Ceci-carni-1462900410684286" data-tabs="timeline" data-width="500px" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Ceci-carni-1462900410684286" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Ceci-carni-1462900410684286">Ceci carni</a></blockquote></div>
 </div>
 
 

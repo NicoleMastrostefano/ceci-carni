@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Order extends Model
 {
+    //protected $dateFormat = 'd/m/Y';
     protected $fillable = [
         'nome',
         'email',

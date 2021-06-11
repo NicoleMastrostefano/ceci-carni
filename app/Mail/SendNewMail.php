@@ -14,6 +14,8 @@ class SendNewMail extends Mailable
     use Queueable, SerializesModels;
 
     protected $order;
+
+    
     /**
      * Create a new message instance.
      *
@@ -31,7 +33,8 @@ class SendNewMail extends Mailable
      */
     public function build()
     {
-        return $this->view('mail.ordermail')
+        return $this->subject('Nuovo Ordine')->view('mail.ordermail')
         ->with('order',$this->order);
     }
+
 }

@@ -47,8 +47,8 @@ class OrderController extends Controller
     public function store(Request $request)
     { 
         // Log::info('store start');
-        $data = $request->all();
-        
+	    $data = $request->all();
+	    $data["consegna"] = \Carbon\Carbon::createFromFormat('d/m/Y',$data["consegna"])->format('m/d/Y');
         $request->validate($this->orderValidation);
 
         // Log::info('store start 2');
@@ -66,8 +66,8 @@ class OrderController extends Controller
         // Log::info('store3 : '. $ordered);
         if($ordered){
 
-            Mail::to('customer@mail.it')->send(new SendNewMail($newOrder));
-            return redirect()
+            Mail::to('ordini@cecicarni.it')->send(new SendNewMail($newOrder));
+	    return redirect()
             ->route('success')
             ->with('message','ordine inviato correttamente');
         }
