@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-<h1 class="mt-5 text-center">Dettaglio ordine</h1>
+<h3 class="mt-5 text-center">Dettaglio ordine</h3>
 <div class="text-right">
   <button class="btnprn btn btn-success" id="btnstampa">STAMPA</button>
 </div>

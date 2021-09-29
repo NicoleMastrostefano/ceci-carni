@@ -20,9 +20,7 @@
                     <a href="{{route('admin.storico')}}" class="btn btn-info">Storico ordini</a>
                 </div>
             </div>
-        </div>
-        
+        </div> 
     </div>
-  
 </div>
 @endsection

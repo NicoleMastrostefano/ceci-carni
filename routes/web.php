@@ -22,7 +22,9 @@ Route::post('/ordinaonline',[App\Http\Controllers\OrderController::class, 'store
 
 
 
-Auth::routes();
+Auth::routes(
+  ['register' => false ]
+);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -59,3 +61,12 @@ Route::get('/contatti', function () {
 Route::get('/success', function () {
   return view("success");
 })->name("success");
+
+
+Route::get('/informativa', function () {
+  return view("informativa");
+})->name("informativa");
+
+Route::get('/cookiepolicy', function () {
+  return view("cookiepolicy");
+})->name("cookiepolicy");

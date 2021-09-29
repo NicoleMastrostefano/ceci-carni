@@ -192,17 +192,123 @@ main a:hover {
   background-image: url("../img/polpette.webp");
 }
 
+#ordini_flex {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: grey;
+}
+#ordini_flex .fb-page {
+  width: 100%;
+}
+#ordini_flex .relative {
+  position: relative;
+  display: none;
+}
+#ordini_flex .dropdown {
+  width: 200px;
+  padding: 15px;
+  color: grey;
+  position: absolute;
+  box-shadow: 1px 0px 4px 0px rgba(0, 0, 0, 0.3), -8px 6px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: none;
+}
+#ordini_flex .dropdown li {
+  list-style: none;
+}
+
 #form-bg {
-  background-image: url("../img/IMG_5383.webp");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: right;
+  width: 100%;
+  background-color: black;
   color: white;
-  padding-bottom: 100px;
 }
 #form-bg .container {
   width: 100%;
   text-align: center;
+}
+
+/* Body & Image List Styles
+-------------------------------------------------------------- */
+.img-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-list li {
+  border: 5px solid transparent;
+  box-sizing: border-box;
+  width: calc(100% / 4);
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.img-list img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* Image Placeholder Styles
+-------------------------------------------------------------- */
+.img-placeholder:before,
+.img-placeholder:after {
+  padding-top: 33.33%;
+  content: "";
+  display: block;
+}
+
+.img-placeholder {
+  background: #222;
+  box-shadow: 0 0 0 8px #222 inset, 0 0 0 9px #333 inset;
+  color: #444;
+  line-height: 0;
+  text-align: center;
+  display: block;
+}
+
+/* The hover effect
+-------------------------------------------------------------- */
+.img-list li:hover {
+  z-index: 20;
+  transition: 0.3s;
+}
+
+.img-list li:before {
+  transition: all 0.5s ease;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scale(0);
+}
+
+.img-list li:hover:before {
+  opacity: 0.5;
+  transform: scale(1);
+}
+
+.img-list li:after {
+  transition: all 0.6s ease 0.2s;
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  border: 1px solid #aaa;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.img-list li:hover:after {
+  opacity: 0.35;
+  transform: scale(1);
 }
 
 #success {
@@ -213,6 +319,13 @@ main a:hover {
 }
 #success #wrapper {
   padding: 100px 0px;
+}
+
+#informativa h1, #cookies h1 {
+  padding: 30px 0px;
+}
+#informativa h2, #cookies h2 {
+  padding: 15px 0px;
 }
 
 @media (max-width: 375px) {
@@ -230,6 +343,11 @@ main a:hover {
   h2 {
     font-size: 1.6em;
   }
+
+  #form-bg {
+    background-image: none;
+    background-color: black;
+  }
 }
 @media (max-width: 600px) {
   #container_margin {
@@ -242,6 +360,7 @@ main a:hover {
     font-size: 14px;
   }
   #container_margin #wrapper-white {
+    width: 70%;
     padding: 70px 0px;
   }
   #container_margin .section_square {
@@ -249,7 +368,7 @@ main a:hover {
   }
   #container_margin .section_square .square_text {
     width: 100%;
-    padding: 130px 50px;
+    padding: 100px 50px;
   }
   #container_margin .section_square .square_image {
     width: 100%;
@@ -264,6 +383,14 @@ main a:hover {
   }
 }
 @media (max-width: 800px) {
+  #ordini_flex {
+    align-items: center;
+    background-color: black;
+  }
+  #ordini_flex .fb-page {
+    width: 100%;
+  }
+
   #booking {
     flex-direction: column-reverse;
   }
@@ -293,7 +420,7 @@ header #header_top {
   margin: 0 auto;
 }
 header #header_top #top_left {
-  width: 20%;
+  width: 30%;
   padding-right: 30px;
   text-align: right;
   border-right: 1px solid #e9e9e9;
@@ -307,7 +434,7 @@ header #header_top #top_center {
   justify-content: center;
 }
 header #header_top #top_right {
-  width: 20%;
+  width: 30%;
   padding-left: 30px;
   border-left: 1px solid #e9e9e9;
   display: flex;
@@ -392,7 +519,7 @@ footer {
 footer #footer-top {
   display: flex;
   width: 100%;
-  padding: 50px 100px 100px 100px;
+  padding: 50px 100px 120px 100px;
   align-items: center;
 }
 footer #footer-top #hours, footer #footer-top #location, footer #footer-top #contacts {
@@ -429,17 +556,22 @@ footer #footer-top #contacts i:hover, footer #footer-top #contacts a:hover {
   color: white;
 }
 footer #footer-bottom {
-  padding: 0px 30px;
+  text-align: center;
 }
 footer #footer-bottom hr {
   width: 100%;
   border: 1px solid rgba(159, 162, 162, 0.3);
+  margin: 0%;
+}
+footer #footer-bottom small {
+  color: #888;
 }
 footer #footer-bottom #social_icons {
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 20px 0px;
 }
 footer #footer-bottom #social_icons i {
   font-size: 34px;

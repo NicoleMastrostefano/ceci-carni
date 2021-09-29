@@ -21,14 +21,17 @@
             06 788 0783 <br>
         </a>
         <span>
-        cecicarni@mail.it
+        info@cecicarni.it
         </span>          
     </div>
 </div>
 <div id="footer-bottom">
     <hr>
+    <small>© 2021 Ceci. Powered by Altemica</small>
     <div id="social_icons">   
-        <a href="https://www.facebook.com/Ceci-carni-1462900410684286/"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://www.instagram.com/macelleria.cecicarni/?hl=it"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/Ceci-carni-1462900410684286/"target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/macelleria.cecicarni/?hl=it"target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
 </div>
+
+

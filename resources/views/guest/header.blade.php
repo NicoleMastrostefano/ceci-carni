@@ -1,7 +1,7 @@
 <div id="bg">
     <div id="header_top">
       <div id="top_left">
-        <span> Piazza S. Domenico Savio 5, 
+        <span> Piazza S. Domenico Savio 5, <br>
           00181 Roma 
         </span> 
       </div>
@@ -10,8 +10,8 @@
       </div>
       <div id="top_right">
         <span>
-        Lun - ven: 8 - 13.30/ 17 - 20 
-        Sab: 8 - 13.30
+        Lun-sab: 8.00-13.30 / 16.30-19.30 <br>
+        Chiuso il giovedì pomeriggio
         </span>
       </div>
     </div>

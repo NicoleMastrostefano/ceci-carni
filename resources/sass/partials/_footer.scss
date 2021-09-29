@@ -6,7 +6,7 @@ footer {
     #footer-top {
         display: flex;
         width: 100%;
-        padding: 50px 100px 100px 100px;
+        padding: 50px 100px 120px 100px;
         align-items: center;
         #hours, #location, #contacts{
             width: calc(100% / 3 );
@@ -43,10 +43,17 @@ footer {
        }
     }
     #footer-bottom{
-        padding: 0px 30px;
+        
+        text-align: center;
+        
         hr{
             width: 100%;
             border:1px solid rgba(159, 162, 162, 0.3); 
+            margin:0%;
+        }
+       
+        small{
+            color: #888;
             
         }
         #social_icons{
@@ -54,6 +61,8 @@ footer {
             display: flex;
             justify-content: space-around;
             align-items: center;
+            padding: 20px 0px;
+           
             i{
                 font-size: 34px;
                 transition: 0.3s;
